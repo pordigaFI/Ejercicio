@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ejercicio"
+        tools:targetApi="31">
+        <activity
+            android:name=".proyfinal.MensajesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".proyfinal.EditContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".proyfinal.ContactosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".proyfinal.RegistroActivity"
+            android:exported="false" />
+        <!--
+<activity
+            android:name=".proyfinal.LoginActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".tarea.FormularioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".proyfinal.PrimerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tarea.AlmacenDatosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compGraficos.Item_Personas"
+            android:exported="false" />
+        <!--
+<activity
+            android:name=".compGraficos.RecyclerViewActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".compGraficos.BotonesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compGraficos.ConstraintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compGraficos.RelativeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compGraficos.LinearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compGraficos.FrameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio1.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio1.FirstActivity"
+            android:exported="false" /> <!-- Ciclo de vida de las apps -->
+        <activity
+            android:name=".ejercicio1.ejercicioActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

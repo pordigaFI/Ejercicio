@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tarea.FormularioActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glPercent"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etNameIn"
+        android:textSize="20dp"
+        android:hint="Nombre"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toTopOf="@+id/glTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etLastnameIn"
+        android:textSize="20dp"
+        android:hint="Apellido"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/etNameIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etSexIn"
+        android:textSize="20dp"
+        android:hint="Genero"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/etLastnameIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etEmailIn"
+        android:textSize="20dp"
+        android:hint="email"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/etSexIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPassIn"
+        android:textSize="20dp"
+        android:hint="Password"
+        android:textColorHint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:text="Registrar"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintTop_toTopOf="@+id/glPercent"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        android:layout_marginHorizontal="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivPaloma"
+        android:src="@mipmap/paloma"
+        app:layout_constraintTop_toBottomOf="@+id/btRegistrar"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        android:layout_marginHorizontal="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

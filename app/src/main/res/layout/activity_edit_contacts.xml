@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".proyfinal.EditContactsActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        app:layout_constraintGuide_begin="16dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        app:layout_constraintGuide_end="16dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        app:layout_constraintGuide_begin="16dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glPercent"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:src="@drawable/alfombraroja"
+        app:layout_constraintTop_toTopOf="@id/glTop"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="140dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+    <ImageView
+        android:id="@+id/ivperson"
+        android:src="@drawable/ic_persona"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/etContacto"
+        android:hint="@string/label_contact"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        android:layout_marginEnd="60dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:src="@drawable/ic_telefono"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btFragAdd"
+        android:text="@string/label_new"
+        app:layout_constraintTop_toTopOf="@id/glTop"
+        android:layout_marginTop="170dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="115dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btFragModificar"
+        android:text="@string/label_edit"
+        app:layout_constraintTop_toTopOf="@id/glTop"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="115dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btFragDel"
+        android:text="@string/label_delete"
+        app:layout_constraintTop_toTopOf="@id/glTop"
+        android:layout_marginTop="270dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="115dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:hint="@string/label_Cellphone"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:inputType="phone"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivMail"
+        android:src="@drawable/ic_sobre"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/etMail"
+        android:hint="@string/label_email"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btFragBack"
+        android:text="@string/label_next"
+        app:layout_constraintTop_toTopOf="@id/glPercent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_marginStart="115dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

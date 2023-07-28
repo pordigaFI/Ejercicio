@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".proyfinal.RegisterFragment">
+
+
+
+    <EditText
+        android:id="@+id/etUser"
+        android:hint="@string/label_introduce_user"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="95dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="@string/label_introduce_pass"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etUser"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="@string/label_name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etLastname"
+        android:hint="@string/label_LastName"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:text="@string/label_toRegister"
+        app:layout_constraintTop_toBottomOf="@+id/etLastname"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="125dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

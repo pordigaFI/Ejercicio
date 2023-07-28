@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Botón de Emergencia</string>
+
+    <string name="label_next">Siguiente</string>>
+    <!--activity selection component-->
+    <string name="label_has_credit_card">¿Cuentas con tarjeta de crédito?</string>
+    <string name="label_man">Hombre</string>
+    <string name="label_woman">Mujer</string>
+    <string name="label_contacts_list">Lista de contactos :</string>
+    <string name="label_contact">Contacto</string>
+    <string name="label_Cellphone">Celular</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_modify">¿Quieres modificar algo ?</string>
+    <string name="label_new">Nuevo</string>
+    <string name="label_edit">Modificar</string>
+    <string name="label_delete">Borrar</string>
+    <string name="label_user">Usuario</string>
+    <string name="label_introduce_user">Usuario</string>
+    <string name="label_pass">password</string>
+    <string name="label_introduce_pass">password</string>
+    <string name="label_cuenta">¿No tienes cuenta aún?</string>
+    <string name="example_of_fragments">Fragmento en blanco</string>
+    <string name="label_name">Nombre:</string>
+    <string name="label_LastName">Apellido:</string>
+    <string name="Logo">Logo de Alfombra Roja</string>
+    <string name="label_toRegister">Registrarse</string>
+    <string name="label_messages">Mensajes :</string>
+    <string name="hello_blank_fragment">Hola, fragmento en blanco</string>
+
+</resources>
